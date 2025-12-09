@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <div class="header">
+        <a href="#content1">О нас</a>
+        <a href="#content2">Наши предложения</a>
+        <a href="#content3">Галерея</a>
+        <a href="#content4">Планирование</a>
+        <a href="#footer">Наши контакты</a>
+    </div>
+   
+    <div class="content1" id="cnntent1">
+        <h1>О нашем проекте</h1>
+        <p id="text1">Добро пожаловать на сайт "Курорты Краснодарского края"! Здесь вы найдете информацию о самых востребованных курортах юга России.</p>
+        <p id="text1">Краснодарский край-один из самых популярных среди туристов и любителей активного отдыха.</p>
+    </div>
+    
+    <div class="content2" id="content2">
+        <h1>Популярные направления</h1>
+        <h3>Топ-3 напрвлений для отдыха:</h3>
+        <ol>
+            <li id="text1">Красная поляна</li>
+            <li id="text1">Геленджик</li>
+            <li id="text1">Горячий ключ</li>
+        </ol>
+        <h3>Сравнение направлений</h3>
+        <table id="text1" class="table1">
+            <tr>
+                <thead id="table">
+                <td>Курорт</td>
+                <td>Лучшее время посещения</td>
+                <td>Средняя стоимость</td>
+                </thead>
+            </tr>
+            <tr>
+                <td>Красная поляна</td>
+                <td>Круглогодично</td>
+                <td>100 000 - 150 000 р.</td>
+            </tr>
+            <tr>
+                <td>Геленджик</td>
+                <td>Май-октябрь</td>
+                <td>80 000 - 110 000 р.</td>
+            </tr>
+            <tr>
+                <td>Горячий ключ</td>
+                <td>Май-сентябрь</td>
+                <td>80 000 - 120 000 р.</td>
+            </tr>
+        </table>
+    </div>
+    
+    <div class="content3" id="content3">
+        <h1>Галерея</h1>
+        <section class="section">
+            <div class="card">
+                <h3>Красная поляна</h3>
+                <img src="Сочи.jpg" width="200px" id="picture">
+                <p id="text1">Прекрасное место для проведения отдыха c семьей и друзьями.</p>
+            </div>
+            <div class="card">
+                <h3>Геленджик</h3>
+                <img src="Геленджик.jpg" width="200px" id="picture">
+                <p id="text1">Один из лучших летних курортов для активного отдыха.</p>
+            </div>
+            <div class="card">
+                <h3>Горячий ключ</h3>
+                <img src="Горячий.jpg" width="200px" id="picture">
+                <p id="text1">Прекрасное место для спокойного отдыха и лечения.</p>
+            </div>
+        </section>
+        <p id="text1">Больше информации о курортах можно найти тут:</p>
+        <ul>
+            <li><a href="https://krasnayapolyanaresort.ru/" id="list" target="_blank">Красная поляна</a></li>
+            <li><a href="https://experience.tripster.ru/articles/gelendzhik/" id="list" target="_blank">Геленджик</a></li>
+            <li><a href="https://www.tripadvisor.ru/Tourism-g2387200-Goryachy_Klyuch_Krasnodar_Krai_Southern_District-Vacations.html" id="list" target="_blank">Горячий ключ</a></li>
+        </ul>
+    </div>
+    
+    <div class="content4" id="content4">
+        <h1>Планирование путешествия</h1>
+        <form action="#" method="post">
+            <div class="form-tape">
+                <label for="username" id="text2">Ваше имя:</label>
+                <input type="text" id="username" name="username" required placeholder="Введите ваше имя">
+                <div class="error-message"></div>
+            </div> <br>
+
+            <div class="form-tape">
+                <label for="email" id="text2">Ваша почта:</label>
+                <input type="email" id="email" name="email" required placeholder="Введите ваш email">
+                <div class="error-message">Введите корректный адрес</div>
+            </div> <br>
+
+            <div class="form-tape">
+                <label for="city" id="text2">Выберите направление</label>
+                <select name="city">
+                <option value="Pol">Красная поляна</option>
+                <option value="Gel">Геленджик</option>
+                <option value="Gor">Горячий ключ</option>
+                </select>
+            </div> <br>
+
+            <div class="form-tape">
+                <label for="choice" id="text2">Тип путешествия:</label> <br>
+                <input type="radio" name="choice" value="one_variant">Индивидуальное
+                <input type="radio" name="choice" value="one_variant">Групповое
+            </div> <br>
+
+            <div class="form-tape">
+                <label for="services" id="text2">Дополнительные услуги:</label> <br>
+                <input type="checkbox" id="services" name="services">Трансфер
+                <input type="checkbox" id="services" name="services">Гид
+                <input type="checkbox" id="services" name="services">Страховка
+            </div>
+
+            <div class="form-tape">
+                <label for="textarea" id="text2">Ваши комментарии:</label> <br>
+                <textarea name="message" rows="20" cols="200" placeholder="Напишите ваши комментарии" id="textarea"></textarea>
+            </div>
+
+            <div class="button">
+                <button type="submit" name="submit" value="Отправить данные">Отправить данные</button>
+                <button type="submit" name="button" value="Очистить форму">Очистить форму</button>
+            </div>
+
+        </form>
+    </div>
+
+    <div class="footer" id="footer">
+        <h1>Наши контакты</h1>
+        <p>Свяжитесь с нами для получения дополнительной информации:</p>
+        <ul id="text1">
+            <li>Телефон: <a href="https://vk.com/id68714562" target="_blank" id="list">+79166365151</a></li>
+            <li>Почта: <a href="https://e.mail.ru/messages/inbox/?back=1" target="_blank" id="list">Denis.Golovatyuk@inbox.ru</a></li>
+            <li>Адрес: г. Москва, ул. Вольная, д. 28/4 к1</li>
+        </ul>
+    </div>
+    
+</body>
+</html>
